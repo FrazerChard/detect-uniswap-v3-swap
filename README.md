@@ -2,25 +2,26 @@
 
 ## Description
 
-This agent detects transactions with large Tether transfers
+This agent detects Swap transactions for the Uniswapv3 protocol
 
 ## Supported Chains
 
 - Ethereum
-- List any other chains this agent can support e.g. BSC
 
 ## Alerts
 
 Describe each of the type of alerts fired by this agent
 
-- FORTA-1
-  - Fired when a transaction contains a Tether transfer over 10,000 USDT
-  - Severity is always set to "low" (mention any conditions where it could be something else)
-  - Type is always set to "info" (mention any conditions where it could be something else)
-  - Mention any other type of metadata fields included with this alert
-
+- UNIV3-SWAP-EVENT
+  - Fired when a transaction contains a Swap from Uniswap V3
+  - Severity is always set to "info" 
+  - Type is always set to "info"
+  - Metadata includes : {sender, recipient, amount0, amount1, tokenPoolAddress}
+  
+  
 ## Test Data
 
 The agent behaviour can be verified with the following transactions:
 
-- 0x3a0f757030beec55c22cbc545dd8a844cbbb2e6019461769e1bc3f3a95d10826 (15,000 USDT)
+- tx: 0xae7f40606d10d91c7c44c8a968820d257ddc2a70c796cd4f765e9a547fc3dfc8
+  - Token Pool Contract: 0x93c212b82c41dc99ba8ff5b21e03946da567ae6f

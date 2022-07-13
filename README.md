@@ -2,7 +2,7 @@
 
 ## Description
 
-This agent detects Swap transactions for the Uniswapv3 protocol
+This agent detects Swap transactions for the UniswapV3 protocol
 
 ## Supported Chains
 
@@ -13,7 +13,7 @@ This agent detects Swap transactions for the Uniswapv3 protocol
 Describe each of the type of alerts fired by this agent
 
 - UNIV3-SWAP-EVENT
-  - Fired when a transaction contains a Swap from Uniswap V3
+  - Fired when a transaction contains a Swap from UniswapV3
   - Severity is always set to "info" 
   - Type is always set to "info"
   - Metadata includes : {sender, recipient, amount0, amount1, tokenPoolAddress}

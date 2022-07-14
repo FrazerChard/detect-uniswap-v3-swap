@@ -15,7 +15,7 @@ export function provideHandleTransaction(): HandleTransaction {
       if (!validateUniswapPair(tokenPoolAddress)) {
         return findings;
       } else {
-        findings.push(generateFinding(eventName, sender, recipient, amount0, amount1, tokenPoolAddress));
+        findings.push(generateFinding(sender, recipient, amount0, amount1, tokenPoolAddress));
       }
     });
     return findings;

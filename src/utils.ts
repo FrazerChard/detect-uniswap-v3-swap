@@ -24,7 +24,6 @@ export const validateUniswapPair = async (tokenPoolAddress: string) => {
 };
 
 export const generateFinding = (
-  eventName: string,
   sender: string,
   recipient: string,
   amount0: number,
@@ -32,8 +31,8 @@ export const generateFinding = (
   tokenPoolAddress: string
 ): Finding => {
   return Finding.fromObject({
-    name: `UniswapV3 ${eventName} Event Detected`,
-    description: `Agent has detected a ${eventName} event for the Uniswap V3 Protocol`,
+    name: `UniswapV3 Swap Event Detected`,
+    description: `Agent has detected a Swap event for the Uniswap V3 Protocol`,
     alertId: "UNIV3-SWAP-EVENT",
     severity: FindingSeverity.Info,
     type: FindingType.Info,

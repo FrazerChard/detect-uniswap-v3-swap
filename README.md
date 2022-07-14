@@ -17,11 +17,11 @@ Describe each of the type of alerts fired by this agent
   - Severity is always set to "info" 
   - Type is always set to "info"
   - Metadata
-    - 'sender': The address for the sender of the the swap.
-    - 'recipient':  The address for the recipient of the the swap.
-    - 'amount0': The quantitiy of token0 swapped.
-    - 'amount1': The quantitiy of token1 swapped.
-    - 'tokenPoolAddress': The token pool contract address.
+    - `sender`: The address for the sender of the the swap.
+    - `recipient`:  The address for the recipient of the the swap.
+    - `amount0`: The quantitiy of token0 swapped.
+    - `amount1`: The quantitiy of token1 swapped.
+    - `tokenPoolAddress`: The token pool contract address.
 
   
 ## Test Data
